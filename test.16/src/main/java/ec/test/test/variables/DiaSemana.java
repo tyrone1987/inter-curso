@@ -6,6 +6,7 @@ public enum DiaSemana {
 	MIERCOLES(3,"X"), 
 	JUEVES(4,"J"), 
 	VIERNES(5,"V");
+	askdlasdasd;
 
 	private int codigoDia;
 	private String inicial;
