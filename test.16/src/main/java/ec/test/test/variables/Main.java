@@ -4,7 +4,8 @@ public class Main {
 	
 	private static final int horasLaborables = 8;
 	
-	
+	private static int x = 1;
+	private static String b= "hola";
 	
 	private String nombreVariable;
 	
@@ -86,5 +87,7 @@ public class Main {
 		double iva = Test.IVA;
 		System.out.println(iva);
 		//no se puede agregar mas a estados
+		
+		System.out.println(x + b);
 	}
 }
