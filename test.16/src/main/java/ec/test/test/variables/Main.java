@@ -65,7 +65,7 @@ public class Main {
 			System.out.println(entero3);
 		}*/
 		
-		DiaSemana[] dias = {DiaSemana.LUNES, DiaSemana.MARTES};
+		/*DiaSemana[] dias = {DiaSemana.LUNES, DiaSemana.MARTES};
 		
 		System.out.println(DiaSemana.JUEVES.name());
 		System.out.println(DiaSemana.JUEVES.getCodigoDia());
@@ -88,6 +88,6 @@ public class Main {
 		System.out.println(iva);
 		//no se puede agregar mas a estados
 		
-		System.out.println(x + b);
+		System.out.println(x + b);*/
 	}
 }
