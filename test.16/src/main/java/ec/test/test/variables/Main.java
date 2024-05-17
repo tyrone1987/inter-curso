@@ -26,7 +26,7 @@ public class Main {
 	static double valor= 136565.12; // negativos positivos deciamles
 	Double valor2;
 	
-	static char a = 'ñ'; //un solo caracter 
+	static char a = 'A'; //un solo caracter 
 	Character dos;
 	
 	static int[] clients;
