@@ -4,8 +4,7 @@ public class MainOperadores {
 	
 	public static void main(String[] args) {
 		Operadores operadores = new Operadores(8,0);
-		
-		
+
 	/*  System.out.println(operadores.sumar());
 		System.out.println(operadores.sumarUno(2));
 		

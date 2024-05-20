@@ -1,6 +1,5 @@
 package ec.test.test.variables.lopez.sentencias;
 
-import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -21,7 +20,7 @@ public class Sentencias {
 			System.out.println("a y b son iguales ");
 		}
 		
-		boolean rs = false;
+		boolean rs = false;	
 		if(!rs) {
 			System.out.println("Ingresa al if");
 		}else {
@@ -56,7 +55,7 @@ public class Sentencias {
 		do {
 			System.out.println(c);
 			if(c == 2) {
-//				break;
+
 			}
 			c++;
 		}while(c < 3);
