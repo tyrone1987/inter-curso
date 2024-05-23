@@ -1,7 +1,7 @@
 package ec.com.banco.internacional.exceptions;
 
 public class Calculos {
-	public static double dividir (int a , int b) throws InterException {
+	public static double dividirPositivos(int a , int b) throws InterException {
 		if(b==0) {
 			throw InterException.divisionCero();
 		}
