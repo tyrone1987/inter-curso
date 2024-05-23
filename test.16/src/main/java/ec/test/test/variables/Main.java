@@ -27,7 +27,11 @@ public class Main {
 	static double valor= 136565.12; // negativos positivos deciamles
 	Double valor2;
 	
+<<<<<<< Updated upstream
 	static char a = 'A'; //un solo caracter 
+=======
+	static char a = 'a'; //un solo caracter 
+>>>>>>> Stashed changes
 	Character dos;
 	
 	static int[] clients;
