@@ -6,7 +6,11 @@ public enum DiaSemana {
 	MIERCOLES(3,"X"), 
 	JUEVES(4,"J"), 
 	VIERNES(5,"V");
+//<<<<<<< Updated upstream
 	
+//=======
+
+//>>>>>>> Stashed changes
 
 	private int codigoDia;
 	private String inicial;
