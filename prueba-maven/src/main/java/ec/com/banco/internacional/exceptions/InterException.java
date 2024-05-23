@@ -2,6 +2,11 @@ package ec.com.banco.internacional.exceptions;
 
 public class InterException extends Exception {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 6576976126013153142L;
+
 	public InterException(String message) {
 		super(message);
 	}
