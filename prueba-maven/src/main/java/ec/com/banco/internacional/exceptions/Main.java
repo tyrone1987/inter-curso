@@ -16,7 +16,7 @@ public class Main {
 				System.out.println(asd.format(fecha));
 				System.out.println(asd.parse("12/01/2025 12:00"));
 				Integer numer = Integer.valueOf("0");
-				Calculos.dividir(5, -1);
+				Calculos.dividirPositivos(-1, -9);
 			} catch (Exception e) {
 				if (e instanceof InterException) {
 					System.err.println("Ya ves por mudo");
