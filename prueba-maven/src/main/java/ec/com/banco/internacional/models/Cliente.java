@@ -1,6 +1,7 @@
 package ec.com.banco.internacional.models;
 
 import java.security.Security;
+import java.time.LocalDateTime;
 import java.util.Date;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
