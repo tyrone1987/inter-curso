@@ -5,6 +5,7 @@ import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
+import ec.com.banco.internacional.models.Agencia;
 import ec.com.banco.internacional.models.Cliente;
 
 public class MainColecciones {
@@ -72,7 +73,7 @@ public class MainColecciones {
 		
 		System.out.println(listaLinked);
 		
-	/*	Cliente c = new Cliente();
+		Cliente c = new Cliente();
 		c.setEdad(50);
 		c.setFehcaNacimiento(new Date());
 		c.setGenero("F");
@@ -81,21 +82,21 @@ public class MainColecciones {
 		List<Cliente> clientes = new LinkedList<>();
 		
 		clientes.add(c);
-		Cliente c2 = new Cliente("anibal", 10,"M", new Date());
+		Cliente c2 = new Cliente("anibal", 10,"M", new Date(), Agencia.CENTRO);
 		clientes.add(c2);
 		
-		clientes.add(new Cliente("anibal", 10,"M", new Date()));
-		clientes.add(new Cliente("luis", 15,"M", new Date()));
-		clientes.add(new Cliente("carlos", 3,"M", new Date()));
-		clientes.add(new Cliente("fernando", 9,"M", new Date()));
-		clientes.add(new Cliente("jesica", 60,"M", new Date()));
-		clientes.add(new Cliente("valentina", 80,"M", new Date()));
+		clientes.add(new Cliente("anibal", 10,"M", new Date(), Agencia.CENTRO));
+		clientes.add(new Cliente("luis", 15,"M", new Date(), Agencia.CENTRO));
+		clientes.add(new Cliente("carlos", 3,"M", new Date(), Agencia.CENTRO));
+		clientes.add(new Cliente("fernando", 9,"M", new Date(), Agencia.CENTRO));
+		clientes.add(new Cliente("jesica", 60,"M", new Date(), Agencia.CENTRO));
+		clientes.add(new Cliente("valentina", 80,"M", new Date(), Agencia.CENTRO));
 		
 		for (Cliente miCliente : clientes) {
 			System.out.println(miCliente.getNombre());
 			
 		}		
-		*/
+		
 		
 		
 		
