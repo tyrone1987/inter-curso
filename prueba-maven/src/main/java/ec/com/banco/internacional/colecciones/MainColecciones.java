@@ -72,7 +72,7 @@ public class MainColecciones {
 		
 		System.out.println(listaLinked);
 		
-		Cliente c = new Cliente();
+	/*	Cliente c = new Cliente();
 		c.setEdad(50);
 		c.setFehcaNacimiento(new Date());
 		c.setGenero("F");
@@ -95,7 +95,7 @@ public class MainColecciones {
 			System.out.println(miCliente.getNombre());
 			
 		}		
-		
+		*/
 		
 		
 		

@@ -13,7 +13,7 @@ import ec.com.banco.internacional.models.TipoCliente;
 
 public class MainColeccion3 {
 	public static void main(String[] arg) {
-		List<Cliente> clientes = new LinkedList<>();
+	/*	List<Cliente> clientes = new LinkedList<>();
 
 		clientes.add(new Cliente("anibal", 10, "M", new Date(), Agencia.SUR));
 		clientes.add(new Cliente("anibal", 10, "M", new Date(), Agencia.NORTE));
@@ -82,6 +82,6 @@ public class MainColeccion3 {
 			List val = entry.getValue();
 			System.out.println(val);
 		}
-		
+		*/
 	}
 }

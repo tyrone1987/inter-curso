@@ -14,7 +14,7 @@ import ec.com.banco.internacional.models.TipoCliente;
 public class MainMaps {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	/*	// TODO Auto-generated method stub
 		
 		//  Clave
 		//	Key **********
@@ -91,7 +91,7 @@ public class MainMaps {
 			System.out.println(val);
 		}
 		
-		
+		*/
 		
 	}
 
