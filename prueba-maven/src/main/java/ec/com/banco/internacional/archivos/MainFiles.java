@@ -40,14 +40,14 @@ public class MainFiles {
 				}
 			}
 			
-			for (int i = 1; i < 100; i++) {
+			for (int i = 1; i < 5; i++) {
 				path = path + File.separator + i;
 				//System.out.println(path);
-				File newdir = new File(path);
-				newdir.mkdir();
+				
 			}
 			
-			
+			File newdir = new File(path);
+			newdir.mkdirs();
 			
 			
 		} catch (Exception e) {

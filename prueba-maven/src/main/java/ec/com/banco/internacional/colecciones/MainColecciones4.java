@@ -36,7 +36,7 @@ public class MainColecciones4 {
 		
 		
 		List<Cliente> clienSur2 = clientes.stream()
-				.filter(c->c.getAgencia().equals(Agencia.SUR)).toList();
+                    .filter(c -> c.getAgencia().equals(Agencia.SUR)).collect(Collectors.toList());
 		System.out.println(clienSur);
 		
 	}
