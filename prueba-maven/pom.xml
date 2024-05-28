@@ -6,6 +6,11 @@
 	<artifactId>prueba-maven</artifactId>
 	<version>0.0.2-SNAPSHOT</version>
 	<name>prueba-maven</name>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
@@ -28,7 +33,7 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<version>5.1.5</version>
 		</dependency>
-	
+
 		<dependency>
 			<groupId>org.eclipse.persistence</groupId>
 			<artifactId>jakarta.persistence</artifactId>
