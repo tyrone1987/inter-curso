@@ -8,17 +8,22 @@ import java.sql.Statement;
 
 public class Conexion {
 
-	private String dbUrl = "jdbc:derby:CursoInterDb;create=true";
+	//private String dbUrl = "jdbc:derby:CursoInterDb;create=true";
 
-	// private String dbUrl = "jdbc:mysql//192.0.0.0:1433:database";
+	private String dbUrl = "jdbc:mysql://localhost:3306/inter_base";
 
+	private String user = "root";
+	
+	private String pass = "12345";
+	
 	private Connection conn;
 
 	public boolean conectar() throws ClassNotFoundException {
 		try {
+			Class.forName("com.mysql.jdbc.Driver"); 
 
 			// DriverManager.getConnection(dbUrl, "usu", "cont");
-			conn = DriverManager.getConnection(dbUrl);
+			conn = DriverManager.getConnection(dbUrl, user, pass);
 			return conn != null;
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block

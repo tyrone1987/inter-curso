@@ -3,6 +3,7 @@ package ec.com.banco.internacional.colecciones;
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.stream.Collectors;
 
 public class MainColecciones5 {
 	public static void main(String[] args) {
@@ -15,7 +16,9 @@ public class MainColecciones5 {
 			int a = (int) object;
 		}
 
-		List<Integer> numerosPares = numeros.stream().filter(item -> item % 2 == 0).toList();
+		List<Integer> numerosPares = numeros.stream()
+				.filter(item -> item % 2 == 0)
+				.collect(Collectors.toList());
 		int suma = 0;
 		for (Integer par : numerosPares) {
 			suma += par;

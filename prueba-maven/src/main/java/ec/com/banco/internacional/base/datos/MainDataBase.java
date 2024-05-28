@@ -4,6 +4,7 @@ public class MainDataBase {
 
 	public static void main(String[] args) {
 		try {
+
 		// TODO Auto-generated method stub
 		Conexion conexion = new Conexion();
 		boolean isConected = conexion.conectar();
@@ -15,7 +16,7 @@ public class MainDataBase {
 				// TODO: handle exception
 			}
 			
-			//conexion.insertarUsuario(5, "Pedro");
+			conexion.insertarUsuario(5, "Pedro");
 			conexion.listarUsuarios();
 			conexion.eliminarUsuario(1);
 			conexion.cerrarConexion();
