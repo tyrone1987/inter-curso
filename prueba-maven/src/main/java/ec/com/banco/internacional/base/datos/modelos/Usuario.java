@@ -7,7 +7,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import lombok.Data;
+
 
 @Table(name = "users")
 @Entity
@@ -22,4 +22,6 @@ public class Usuario {
 	private String nombre;
 	
 	private String apellido;
+	
+	
 }
