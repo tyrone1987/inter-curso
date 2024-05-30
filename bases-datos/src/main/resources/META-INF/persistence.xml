@@ -1,34 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence version="2.1"
-             xmlns="http://xmlns.jcp.org/xml/ns/persistence"
-             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
              http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
-  	<persistence-unit name="bancoPU">
+	<persistence-unit name="bancoPU">
 		<class>ec.test.inter.modelos.derby.Usuario</class>
 		<class>ec.test.inter.modelos.derby.Permiso</class>
+		<class>ec.test.inter.modelos.derby.Cuenta</class>
 		<class>ec.test.inter.modelos.derby.UsurioPermiso</class>
 		<class>ec.test.inter.modelos.derby.Modulos</class>
 		<properties>
-			<property name="javax.persistence.jdbc.url" value="jdbc:derby:CursoInterDb;create=true"/>
-			<property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.EmbeddedDriver"/>
-			<property name="hibernate.dialect" value="org.hibernate.dialect.DerbyTenSevenDialect"/>
-			<property name="hibernate.hbm2ddl.auto" value="update"/>
-			<property name="hibernate.show_sql" value="true"/>
-			<property name="hibernate.format_sql" value="true"/>
+			<property name="javax.persistence.jdbc.url"
+				value="jdbc:derby:CursoInterDb;create=true" />
+			<property name="javax.persistence.jdbc.driver"
+				value="org.apache.derby.jdbc.EmbeddedDriver" />
+			<property name="eclipselink.logging.level" value="FINE" />
+			<property name="eclipselink.ddl.generation"
+				value="create-or-extend-tables" />
+			<property name="eclipselink.ddl.generation.output-mode"
+				value="database" />
 		</properties>
 	</persistence-unit>
 	<persistence-unit name="mysqlPU">
-		<class>ec.test.inter.modelos.mysql.Cliente</class>
+		<class>ec.test.inter.modelos.derby.Usuario</class>
+		<class>ec.test.inter.modelos.derby.Permiso</class>
+		<class>ec.test.inter.modelos.derby.Cuenta</class>
+		<class>ec.test.inter.modelos.derby.UsurioPermiso</class>
+		<class>ec.test.inter.modelos.derby.Modulos</class>
 		<properties>
-			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/inter_base"/>
-			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
-			<property name="javax.persistence.jdbc.user" value="root"/>
-			<property name="javax.persistence.jdbc.password" value="12345"/>
-			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
-			<property name="hibernate.hbm2ddl.auto" value="true"/>
-			<property name="hibernate.show_sql" value="true"/>
-			<property name="hibernate.format_sql" value="true"/>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/inter_base" />
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+			<property name="javax.persistence.jdbc.user" value="root" />
+			<property name="javax.persistence.jdbc.password" value="12345" />
+			<property name="eclipselink.logging.level" value="FINE" />
+            <property name="javax.persistence.schema-generation.database.action" value="create-or-extend-tables"/>
+		</properties>
+	</persistence-unit>
+
+	<persistence-unit name="examplePU"
+		transaction-type="RESOURCE_LOCAL">
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		<class>com.example.Cliente</class>
+		<properties>
+			<property name="javax.persistence.jdbc.driver"
+				value="com.ibm.db2.jcc.DB2Driver" />
+			<property name="javax.persistence.jdbc.url"
+				value="jdbc:db2://localhost:50000/yourDatabase" />
+			<property name="javax.persistence.jdbc.user"
+				value="yourUsername" />
+			<property name="javax.persistence.jdbc.password"
+				value="yourPassword" />
+			<property name="eclipselink.logging.level" value="FINE" />
+			<property name="eclipselink.ddl-generation"
+				value="create-or-extend-tables" />
+			<property name="eclipselink.ddl-generation.output-mode"
+				value="database" />
 		</properties>
 	</persistence-unit>
 </persistence>

@@ -35,3 +35,5 @@ prueba-maven/target/maven-status/maven-compiler-plugin/testCompile/default-testC
 prueba-maven/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
 /prueba-maven/CursoInterDb
 /bases-datos/CursoInterDb
+/mi-proyecto-web/target
+/mi-proyecto-web/.settings
