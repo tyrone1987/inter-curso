@@ -37,3 +37,6 @@ prueba-maven/target/maven-status/maven-compiler-plugin/testCompile/default-testC
 /bases-datos/CursoInterDb
 /mi-proyecto-web/target
 /mi-proyecto-web/.settings
+/inter-completo-main/proyecto-ejb/target
+/inter-completo-main/proyecto-web-ui/target
+/inter-completo-main/web-jsprime/target

@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+            xmlns:f="http://java.sun.com/jsf/core"
+
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Facelet Title</title>
+            <f:facet name="first">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+            <meta charset="UTF-8" />
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0"/>
+            <meta name="apple-mobile-web-app-capable" content="yes"/>
+            <link href="#{resource['stp/images/favicon.png']}" rel="icon" type="image/png" sizes="32x32"/>
+        </f:facet>
+        <title>MESA DE SERVICIOS</title>
+
+        <h:outputStylesheet name="css/primeflex.css" library="stp"/>
+        <h:outputStylesheet name="css/primeflex.min.css" library="stp"/>
+        <h:outputStylesheet name="css/flags/flags.css" library="stp"/>
+
+        <h:outputScript name="jquery/jquery.js" library="primefaces"/>
+        <h:outputScript name="jquery/jquery-plugins.js" library="primefaces"/>
+        <h:outputScript name="locales/locale-es.js" library="primefaces"/>
+    </h:head>
+    <h:body>
+        <p:dataTable value="#{atletasView.atletas}" var="atl"
+                     paginator="true" paginatorPosition="both"
+                     paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+                     currentPageReportTemplate="{startRecord}-{endRecord} de {totalRecords} filas"
+                     rowsPerPageTemplate="5,10,{ShowAll|'All'}">
+            <p:column headerText="Nombre atleta">
+                <h:outputText value="#{atl.nombre}"/>
+            </p:column>
+            <p:column headerText="Edad atleta">
+                <h:outputText value="#{atl.edad}"/>
+            </p:column>
+            <p:column headerText="Peso atleta">
+                <h:outputText value="#{atl.peso}"/>
+            </p:column>
+        </p:dataTable>
+          <h:outputStylesheet name="css/primeflex.css" library="stp"/>
+            <h:outputStylesheet name="css/primeflex.min.css" library="stp"/>
+            <h:outputStylesheet name="css/layout/layout.css" library="stp"/>
+            <h:outputScript name="script/layout.js" library="stp" />
+            <h:outputScript name="stp/script/prism.js" />
+    </h:body>
+</html>
